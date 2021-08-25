@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+}
+
+div.mision {
+    width: 50%;
+    padding: 20px;
+}
+
+div.vision {
+    width: 50%;
+    padding: 20px;
+}
+
+div.mision>p {
+    font-family: Franklin Gothic Book;
+}
+
+div.vision>p {
+    font-family: Franklin Gothic Book;
+}
+
+section.sec {
+    display: flex;
+    font-family: 'Franklin Gothic Medium';
+    background-color: antiquewhite;
+    text-align: justify;
+    padding: 30PX;
+}
+
+section.lema {
+    font-family: 'Franklin Gothic Medium';
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+}
+
+div.lemay {
+    width: 100%;
+}
+
+div.lemay>h1 {
+    color: rgba(51, 8, 80, 0.466);
+    font-size: 30px;
+}
+
+div.lemay>p {
+    color: #33085077;
+    font-family: Franklin Gothic Book;
+    font-size: 20px;
+}
+
+div.imagn {
+    width: 200px;
+    padding: 30px;
+}
+
+.story-text {
+    background-color: aquamarine;
+    width: auto;
+    height: auto;
+    padding: 10%;
+}
+
+.text-h {
+    color: rgb(28, 58, 58);
+    text-align: center;
+}
+
+.text-h p {
+    text-align: justify;
+}

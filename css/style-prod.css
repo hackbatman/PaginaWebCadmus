@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    width: 100%;
+    background-color: #9eece5;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+aside.adicional {
+    width: 30%;
+    margin-top: 100px;
+    margin-left: 5%;
+    margin-right: 2%;
+    background-color: aqua;
+}
+
+.adicional-txt {
+    font-family: 'Franklin Gothic Book';
+    color: rgb(70, 49, 18);
+    margin: 10%;
+    text-align: center;
+}
+
+.adicional-txt h3 {
+    margin-top: 30%;
+}
+
+.adicional-txt h4 {
+    margin-top: 5%;
+    color: cadetblue;
+}
+
+.adicional-txt p {
+    margin-top: 30%;
+}
+
+.adicional-txt input {
+    margin-top: 10%;
+}
+
+.adicional-txt img {
+    max-width: 100%;
+    display: block;
+}
+
+.producto-txt {
+    margin-top: 50px;
+    padding-top: 5px;
+    color: #0c0f2b;
+}
+
+.producto-txt h2 {
+    font-size: 70px;
+}
+
+.producto-txt p {
+    font-size: 30px;
+}
+
+article.menu-text-prod {
+    width: 90%;
+    max-width: 1000px;
+    margin-left: 2%;
+    margin-right: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+}
+
+.producto {
+    background-color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .095);
+    transition: all 300ms;
+    position: relative;
+}
+
+.producto::after {
+    content: "";
+    background-color: rgba(179, 229, 252, .1);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all 300ms;
+    opacity: 0;
+}
+
+.producto:hover:after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
+.text-prod {
+    padding: 1em;
+}
+
+.prod-img {
+    max-width: 100%;
+    display: block;
+}
+
+@media screen and (min-width: 590px) {
+    .menu-text-prod {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .menu-text-prod {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
